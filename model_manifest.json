@@ -1,0 +1,30 @@
+{
+  "schema_version": "1",
+  "open_source": true,
+  "model_name": "poker44-quad-detector",
+  "model_version": "1",
+  "framework": "mlp",
+  "license": "MIT",
+  "repo_url": "https://github.com/danielstardev/yuki-demon-3",
+  "repo_commit": "",
+  "artifact_sha256": "48940c558ce9d0578849c3257e3bb35fdc5ef88c55fbead4e34799861e51be4c",
+  "artifact_basename": "current.joblib",
+  "implementation_sha256": "8ce55f8eed330d07846bcdcb26ee1c5e04d9989584091afae9d534b54ce52d52",
+  "implementation_files": [
+    "neurons/miner.py",
+    "poker44_ml/inference.py",
+    "poker44_ml/features.py",
+    "poker44_ml/sequence_model.py",
+    "poker44_ml/stacked.py",
+    "poker44_ml/calibration.py",
+    "poker44_ml/batch_calibration.py",
+    "poker44/validator/payload_view.py"
+  ],
+  "inference_mode": "local-joblib",
+  "training_data_statement": "Trained on the Poker44 public training benchmark (api.poker44.net). No validator-private evaluation data used.",
+  "training_data_sources": [
+    "released_training_benchmark"
+  ],
+  "private_data_attestation": "No validator-private data used. Supervised artifacts use released benchmark labels only.",
+  "data_attestation": "No validator-private data used. Supervised artifacts use released benchmark labels only."
+}
